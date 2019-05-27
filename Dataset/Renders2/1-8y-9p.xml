@@ -1,0 +1,48 @@
+<annotation>
+    <folder>Renders2</folder>
+    <filename>1-8y-9p.png</filename>
+    <path>C:\Users\y_sta\Documents\CanBottleRecognition\Dataset\Renders2\1-8y-9p.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>600</width>
+        <height>400</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>430.80681946788917</xmin>
+            <ymin>102.4087503369008</ymin>
+            <xmax>553.0441797092867</xmax>
+            <ymax>212.01985782223778</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>can</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>401.0584735223921</xmin>
+            <ymin>79.13219707203996</ymin>
+            <xmax>439.67320426999845</xmax>
+            <ymax>98.0817934085647</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>can</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>465.4379408243086</xmin>
+            <ymin>198.55120373130805</ymin>
+            <xmax>590.2985852418074</xmax>
+            <ymax>301.2017639430007</ymax>
+        </bndbox>
+    </object>
+</annotation>

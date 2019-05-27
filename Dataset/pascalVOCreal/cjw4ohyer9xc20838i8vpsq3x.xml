@@ -1,0 +1,26 @@
+<annotation>
+    <folder>tmpsza5bo9x</folder>
+    <filename>cjw4ohyer9xc20838i8vpsq3x.jpeg</filename>
+    <path>/tmp/tmpsza5bo9x/cjw4ohyer9xc20838i8vpsq3x.jpeg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>600</width>
+        <height>400</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+                <xmin>443</xmin>
+                <ymin>8</ymin>
+                <xmax>601</xmax>
+                <ymax>325</ymax>
+            </bndbox>
+        </object>
+    </annotation>
