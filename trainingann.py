@@ -111,34 +111,36 @@ val_dataset = DataGenerator(load_images_into_memory=False, hdf5_dataset_path=Non
 # TODO: Set the paths to the datasets here.
 
 # The directories that contain the images.
-VOC_2007_images_dir      = 'Dataset/Renders1'
+training_dataset_dir      = 'Dataset/Training'
 
 
 # The directories that contain the annotations.
-VOC_2007_annotations_dir      = 'Dataset/Renders1'
+validation_dataset_dir      = 'Dataset/Validation'
+
+
 
 
 # The paths to the image sets.
-VOC_2007_train_image_set_filename    = 'datasets/VOCdevkit/VOC2007/ImageSets/Main/train.txt'
-VOC_2007_val_image_set_filename      = 'datasets/VOCdevkit/VOC2007/ImageSets/Main/val.txt'
-VOC_2007_trainval_image_set_filename = 'datasets/VOCdevkit/VOC2007/ImageSets/Main/trainval.txt'
-VOC_2007_test_image_set_filename     = 'datasets/VOCdevkit/VOC2007/ImageSets/Main/test.txt'
+train_image_set_filename    = 'Dataset/train.txt'
+val_image_set_filename      = 'Dataset/val.txt'
+trainval_image_set_filename = 'Dataset/trainval.txt'
+test_image_set_filename     = 'Dataset/test.txt'
 
 # The XML parser needs to now what object class names to look for and in which order to map them to integers.
 classes = ['litter']
 
-train_dataset.parse_xml(images_dirs=[VOC_2007_images_dir],
-                        image_set_filenames=[VOC_2007_train_image_set_filename],
-                        annotations_dirs=[VOC_2007_annotations_dir],
+train_dataset.parse_xml(images_dirs=[training_dataset_dir],
+                        image_set_filenames=[train_image_set_filename],
+                        annotations_dirs=[training_dataset_dir],
                         classes=classes,
                         include_classes='all',
                         exclude_truncated=False,
                         exclude_difficult=False,
                         ret=False)
 
-val_dataset.parse_xml(images_dirs=[VOC_2007_images_dir],
-                      image_set_filenames=[VOC_2007_val_image_set_filename],
-                      annotations_dirs=[VOC_2007_annotations_dir],
+val_dataset.parse_xml(images_dirs=[validation_dataset_dir],
+                      image_set_filenames=[val_image_set_filename],
+                      annotations_dirs=[validation_dataset_dir],
                       classes=classes,
                       include_classes='all',
                       exclude_truncated=False,
@@ -150,15 +152,15 @@ val_dataset.parse_xml(images_dirs=[VOC_2007_images_dir],
 # option in the constructor, because in that cas the images are in memory already anyway. If you don't
 # want to create HDF5 datasets, comment out the subsequent two function calls.
 
-train_dataset.create_hdf5_dataset(file_path='dataset_pascal_voc_07+12_trainval.h5',
-                                  resize=False,
-                                  variable_image_size=True,
-                                  verbose=True)
+# train_dataset.create_hdf5_dataset(file_path='dataset_pascal_voc_07+12_trainval.h5',
+#                                   resize=False,
+#                                   variable_image_size=True,
+#                                   verbose=True)
 
-val_dataset.create_hdf5_dataset(file_path='dataset_pascal_voc_07_test.h5',
-                                resize=False,
-                                variable_image_size=True,
-                                verbose=True)
+# val_dataset.create_hdf5_dataset(file_path='dataset_pascal_voc_07_test.h5',
+#                                 resize=False,
+#                                 variable_image_size=True,
+#                                 verbose=True)
 
 # 3: Set the batch size.
 
@@ -354,12 +356,12 @@ print(y_pred_decoded_inv[i])
 
 # Set the colors for the bounding boxes
 colors = plt.cm.hsv(np.linspace(0, 1, n_classes+1)).tolist()
-classes = ['background',
-           'aeroplane', 'bicycle', 'bird', 'boat',
-           'bottle', 'bus', 'car', 'cat',
-           'chair', 'cow', 'diningtable', 'dog',
-           'horse', 'motorbike', 'person', 'pottedplant',
-           'sheep', 'sofa', 'train', 'tvmonitor']
+# classes = ['background',
+#            'aeroplane', 'bicycle', 'bird', 'boat',
+#            'bottle', 'bus', 'car', 'cat',
+#            'chair', 'cow', 'diningtable', 'dog',
+#            'horse', 'motorbike', 'person', 'pottedplant',
+#            'sheep', 'sofa', 'train', 'tvmonitor']
 
 plt.figure(figsize=(20,12))
 plt.imshow(batch_original_images[i])
@@ -371,7 +373,7 @@ for box in batch_original_labels[i]:
     ymin = box[2]
     xmax = box[3]
     ymax = box[4]
-    label = '{}'.format(classes[int(box[0])])
+    # label = '{}'.format(classes[int(box[0])])
     current_axis.add_patch(plt.Rectangle((xmin, ymin), xmax-xmin, ymax-ymin, color='green', fill=False, linewidth=2))  
     current_axis.text(xmin, ymin, label, size='x-large', color='white', bbox={'facecolor':'green', 'alpha':1.0})
 
@@ -381,7 +383,7 @@ for box in y_pred_decoded_inv[i]:
     xmax = box[4]
     ymax = box[5]
     color = colors[int(box[0])]
-    label = '{}: {:.2f}'.format(classes[int(box[0])], box[1])
+    # label = '{}: {:.2f}'.format(classes[int(box[0])], box[1])
     current_axis.add_patch(plt.Rectangle((xmin, ymin), xmax-xmin, ymax-ymin, color=color, fill=False, linewidth=2))  
     current_axis.text(xmin, ymin, label, size='x-large', color='white', bbox={'facecolor':color, 'alpha':1.0})
 
