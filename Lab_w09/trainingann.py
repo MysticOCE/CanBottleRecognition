@@ -34,8 +34,8 @@ from data_generator.object_detection_2d_misc_utils import apply_inverse_transfor
 
 %matplotlib inline
 
-img_height = 400 # Height of the model input images
-img_width = 600 # Width of the model input images
+img_height = 300 # Height of the model input images
+img_width = 300 # Width of the model input images
 img_channels = 3 # Number of color channels of the model input images
 
 mean_color = [123, 117, 104] # The per-channel mean of the images in the dataset. Do not change this value if you're using any of the pre-trained weights.
