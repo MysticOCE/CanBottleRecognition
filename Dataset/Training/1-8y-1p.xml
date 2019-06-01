@@ -1,0 +1,48 @@
+<annotation>
+    <folder>Training</folder>
+    <filename>1-8y-1p.png</filename>
+    <path>C:\Users\y_sta\Documents\CanBottleRecognition\Dataset\Training\1-8y-1p.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>600</width>
+        <height>400</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>419.6503663705202</xmin>
+            <ymin>124.99231042773857</ymin>
+            <xmax>550.5742842728035</xmax>
+            <ymax>207.82606592759078</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>391.82616361690555</xmin>
+            <ymin>126.10426735308539</ymin>
+            <xmax>426.0901121919147</xmax>
+            <ymax>143.97443619057051</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>464.96809876022553</xmin>
+            <ymin>141.23696985231282</ymin>
+            <xmax>597.8583431572257</xmax>
+            <ymax>206.17767870901966</ymax>
+        </bndbox>
+    </object>
+</annotation>

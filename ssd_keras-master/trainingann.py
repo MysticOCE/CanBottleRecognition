@@ -1,7 +1,7 @@
 import sys
 import os
 import json
-sys.path.insert(0, os.getcwd() + "\\ssd_keras-master")
+sys.path.insert(0, os.getcwd() + "/ssd_keras-master")
 # !pip install --user imageio
 # !pip install --user tqdm
 # !pip install --user opencv-python

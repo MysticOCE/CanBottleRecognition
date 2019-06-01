@@ -1,0 +1,37 @@
+<annotation>
+    <folder>Training</folder>
+    <filename>2-6y-2p.png</filename>
+    <path>C:\Users\y_sta\Documents\CanBottleRecognition\Dataset\Training\2-6y-2p.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>600</width>
+        <height>400</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>272.0412885519798</xmin>
+            <ymin>119.03491067488407</ymin>
+            <xmax>355.2385311820113</xmax>
+            <ymax>165.08226535880402</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>147.557099743121</xmin>
+            <ymin>124.69549786854964</ymin>
+            <xmax>217.73031844469926</xmax>
+            <ymax>158.76790993928034</ymax>
+        </bndbox>
+    </object>
+</annotation>
