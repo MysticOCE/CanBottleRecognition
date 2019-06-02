@@ -1,0 +1,38 @@
+<annotation>
+    <folder>tmp0_vhgj9b</folder>
+    <filename>cjwe9lvipei9s08668b4uaoph.png</filename>
+    <path>/tmp/tmp0_vhgj9b/cjwe9lvipei9s08668b4uaoph.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>533</width>
+        <height>400</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+                <xmin>60</xmin>
+                <ymin>306</ymin>
+                <xmax>84</xmax>
+                <ymax>339</ymax>
+            </bndbox>
+        </object>
+    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+                <xmin>417</xmin>
+                <ymin>170</ymin>
+                <xmax>440</xmax>
+                <ymax>182</ymax>
+            </bndbox>
+        </object>
+    </annotation>

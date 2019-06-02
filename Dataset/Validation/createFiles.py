@@ -10,12 +10,12 @@ import glob
 #   outFT.write("\n")
 # outFT.close()
 
-fileList2 = (glob.glob("*.jpeg")) 
+fileList2 = (glob.glob("*.png")) 
 outFV = open("val.txt", "w")
 
 for line in fileList2:
   # write line to output file
-  outFV.write(line[:-5])
+  outFV.write(line[:-4])
   outFV.write("\n")
 outFV.close()
 

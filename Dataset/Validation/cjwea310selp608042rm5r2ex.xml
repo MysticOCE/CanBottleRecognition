@@ -1,0 +1,38 @@
+<annotation>
+    <folder>tmp0_vhgj9b</folder>
+    <filename>cjwea310selp608042rm5r2ex.png</filename>
+    <path>/tmp/tmp0_vhgj9b/cjwea310selp608042rm5r2ex.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>533</width>
+        <height>400</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+                <xmin>308</xmin>
+                <ymin>149</ymin>
+                <xmax>336</xmax>
+                <ymax>182</ymax>
+            </bndbox>
+        </object>
+    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+                <xmin>319</xmin>
+                <ymin>325</ymin>
+                <xmax>354</xmax>
+                <ymax>347</ymax>
+            </bndbox>
+        </object>
+    </annotation>
