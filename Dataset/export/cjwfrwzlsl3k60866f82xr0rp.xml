@@ -1,0 +1,26 @@
+<annotation>
+    <folder>tmpppiohocb</folder>
+    <filename>cjwfrwzlsl3k60866f82xr0rp.jpeg</filename>
+    <path>/tmp/tmpppiohocb/cjwfrwzlsl3k60866f82xr0rp.jpeg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>600</width>
+        <height>400</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>Plastic Bottle</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+                <xmin>159</xmin>
+                <ymin>211</ymin>
+                <xmax>223</xmax>
+                <ymax>256</ymax>
+            </bndbox>
+        </object>
+    </annotation>
