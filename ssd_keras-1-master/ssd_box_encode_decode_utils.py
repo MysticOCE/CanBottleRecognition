@@ -211,7 +211,7 @@ def greedy_nms(y_pred_decoded, iou_threshold=0.45, coords='corners'):
 
     return y_pred_decoded_nms
 
-def _greedy_nms(predictions, iou_threshold=0.45, coords='corners'):
+def _greedy_nms(predictions, iou_threshold=0.6, coords='corners'):
     '''
     The same greedy non-maximum suppression algorithm as above, but slightly modified for use as an internal
     function for per-class NMS in `decode_y()`.
@@ -228,7 +228,7 @@ def _greedy_nms(predictions, iou_threshold=0.45, coords='corners'):
         boxes_left = boxes_left[similarities <= iou_threshold] # ...so that we can remove the ones that overlap too much with the maximum box
     return np.array(maxima)
 
-def _greedy_nms2(predictions, iou_threshold=0.45, coords='corners'):
+def _greedy_nms2(predictions, iou_threshold=0.6, coords='corners'):
     '''
     The same greedy non-maximum suppression algorithm as above, but slightly modified for use as an internal
     function in `decode_y2()`.
