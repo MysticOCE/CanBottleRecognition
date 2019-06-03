@@ -8,7 +8,7 @@ for line in fileList1:
   outFT.write(line[:-5])
   outFT.write("\n")
 
-fileList2 = glob.glob("*.png")
+fileList2 = glob.glob("*.jpg")
 for line in fileList2:
   # write line to output file
   outFT.write(line[:-4])
