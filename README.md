@@ -1,5 +1,6 @@
 # CanBottleRecognition
 Python based ML for recognising and locating plastic bottles/aluminium cans in natural pictures.
+Uses images of size 600 width, 400 height.
 
 ## Acknowledgments
 
